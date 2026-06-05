@@ -1,0 +1,14 @@
+pandas>=2.0
+openpyxl>=3.1
+requests>=2.31
+Pillow>=10.0
+
+# Optional — for csv_cloudinary_normalizer_v2.py
+# (included in requests already)
+
+# Optional — for png_to_svg.py
+# vtracer>=0.6
+
+# Optional — AVIF/HEIC image support
+# pillow-avif-plugin
+# pillow-heif
