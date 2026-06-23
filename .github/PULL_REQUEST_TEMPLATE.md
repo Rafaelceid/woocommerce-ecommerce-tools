@@ -1,19 +1,14 @@
-## What does this PR do?
+## Summary
+<!-- What does this PR change and why? -->
 
-<!-- One sentence summary -->
+## Changes
+- [ ] Feature / fix / refactor (pick one)
 
-## Type of change
-
-- [ ] Bug fix
-- [ ] New feature / new tool
-- [ ] Refactor / cleanup
-- [ ] Documentation
+## Testing
+- [ ] Added / updated tests
+- [ ] `pytest tests/ -v` passes locally
 
 ## Checklist
-
-- [ ] `pytest tests/ -v` passes locally
-- [ ] New code has type hints and docstrings
-- [ ] No hardcoded paths or credentials
-- [ ] `--dry-run` added if the script writes to an external API
-- [ ] `presets.json` updated if image sizes changed
-- [ ] README updated if new CLI flags or tools were added
+- [ ] No credentials or client data in the diff
+- [ ] `--dry-run` default preserved on any write operations
+- [ ] `ruff check` passes

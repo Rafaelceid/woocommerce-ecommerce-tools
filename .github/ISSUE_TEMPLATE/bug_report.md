@@ -4,21 +4,19 @@ about: Something isn't working
 labels: bug
 ---
 
-**Script / tool**
-<!-- e.g. tools/image_tools.py resize -->
+**Describe the bug**
 
-**What happened**
-<!-- Paste the error / unexpected output -->
-
-**Steps to reproduce**
-```bash
-python tools/image_tools.py resize --folder ./test --preset product
-```
-
-**Environment**
-- OS:
-- Python version (`python --version`):
-- Pillow version (`pip show Pillow | grep Version`):
+**To reproduce**
+Steps to reproduce the behaviour.
 
 **Expected behaviour**
-<!-- What should have happened -->
+
+**Environment**
+- Python version:
+- OS:
+- WooCommerce version (if relevant):
+
+**Logs / error output**
+```
+paste here
+```

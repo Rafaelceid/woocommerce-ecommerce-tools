@@ -1,39 +1,30 @@
-# Secrets
-.env
-*.env
-
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-.venv/
-venv/
-.python-version
+.pytest_cache/
+.ruff_cache/
 *.egg-info/
 dist/
 build/
+venv/
+.venv/
 
-# Test / coverage cache
-.pytest_cache/
-.coverage
-htmlcov/
+# Environment & secrets
+.env
+*.env.local
 
-# Data files (never commit client data or generated output)
-*.xlsx
-*.xls
-*.csv
+# Generated outputs
+output/
+outputs/
+processed/
 *.zip
 
-# Generated image output folders (created by tools at runtime)
-webp/
-output/
-
-# OS / IDE
+# OS
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
-*.swp
 
-# Logs
-*.log
+# IDE
+.vscode/
+.idea/
+*.code-workspace
