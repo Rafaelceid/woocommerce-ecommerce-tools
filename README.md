@@ -1,9 +1,9 @@
 # WooCommerce E-commerce Toolkit
 
+[![CI](https://github.com/Rafaelceid/woocommerce-ecommerce-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/Rafaelceid/woocommerce-ecommerce-tools/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-35%20passing-brightgreen.svg)](tests/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Changelog](https://img.shields.io/badge/changelog-v1.0.0-informational.svg)](CHANGELOG.md)
 
 A production-grade Python toolkit for WooCommerce + Woodmart stores. Built for a pharmacy/cosmetics e-commerce shop in Cyprus — generalised for any WooCommerce operator.
 
