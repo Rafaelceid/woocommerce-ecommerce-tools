@@ -1,0 +1,39 @@
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.python-version
+*.egg-info/
+dist/
+build/
+
+# Test / coverage cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data files (never commit client data or generated output)
+*.xlsx
+*.xls
+*.csv
+*.zip
+
+# Generated image output folders (created by tools at runtime)
+webp/
+output/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log

@@ -1,0 +1,45 @@
+{
+  "_comment": "Single source of truth for Ifiale image output sizes. Read by image_tools.py and ifiale-image-studio.html.",
+  "presets": {
+    "product": {
+      "size": 1000,
+      "bg": "white",
+      "pad": 8,
+      "quality": 82,
+      "label": "Main product image",
+      "recommended": true
+    },
+    "product800": {
+      "size": 800,
+      "bg": "white",
+      "pad": 8,
+      "quality": 82,
+      "label": "Product image (lighter variant)"
+    },
+    "category": {
+      "size": 600,
+      "bg": "card",
+      "pad": 10,
+      "quality": 85,
+      "label": "Category thumbnail"
+    },
+    "shop": {
+      "size": 500,
+      "bg": "card",
+      "pad": 8,
+      "quality": 85,
+      "label": "Shop / catalog thumbnail"
+    },
+    "logo": {
+      "size": 500,
+      "bg": "transparent",
+      "pad": 14,
+      "quality": 90,
+      "label": "Brand logo (preserves transparency)"
+    }
+  },
+  "bg_colors": {
+    "white": "#FFFFFF",
+    "card": "#FBF8F3"
+  }
+}
