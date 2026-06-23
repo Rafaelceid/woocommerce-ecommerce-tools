@@ -1,41 +1,46 @@
 {
-  "_comment": "Single source of truth for Ifiale image output sizes. Read by image_tools.py and ifiale-image-studio.html.",
+  "_comment": "Single source of truth for Ifiale image output sizes. Read by image_tools.py and ifiale-image-studio.html. Sizes follow 2026 WooCommerce best practices.",
   "presets": {
     "product": {
-      "size": 1000,
+      "size": 1200,
       "bg": "white",
       "pad": 8,
       "quality": 82,
-      "label": "Main product image",
-      "recommended": true
+      "label": "Product — upload size",
+      "recommended": true,
+      "_note": "1200×1200 is the upload standard. WooCommerce scales down to 800px (single page) and 600px (catalog). Target: under 200 KB WebP."
     },
     "product800": {
       "size": 800,
       "bg": "white",
       "pad": 8,
       "quality": 82,
-      "label": "Product image (lighter variant)"
+      "label": "Product — single page display",
+      "_note": "WooCommerce displays main product image at 800px. Use when you need a lighter batch without zoom support."
     },
     "category": {
       "size": 600,
       "bg": "card",
       "pad": 10,
       "quality": 85,
-      "label": "Category thumbnail"
+      "label": "Category thumbnail",
+      "_note": "WooCommerce catalog grid. Target: under 100 KB WebP."
     },
     "shop": {
-      "size": 500,
+      "size": 400,
       "bg": "card",
       "pad": 8,
-      "quality": 85,
-      "label": "Shop / catalog thumbnail"
+      "quality": 80,
+      "label": "Shop grid thumbnail",
+      "_note": "Cart widgets and small grid thumbnails. Target: under 40 KB WebP."
     },
     "logo": {
       "size": 500,
       "bg": "transparent",
       "pad": 14,
       "quality": 90,
-      "label": "Brand logo (preserves transparency)"
+      "label": "Brand logo (transparent)",
+      "_note": "Preserves transparency. WebP replaces PNG for logos — same quality, 40% smaller."
     }
   },
   "bg_colors": {

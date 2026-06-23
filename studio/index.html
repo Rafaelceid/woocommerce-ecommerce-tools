@@ -184,7 +184,7 @@
           <button class="chip" data-preset="logo">Logo</button>
           <button class="chip" data-preset="custom">Custom</button>
         </div>
-        <p class="preset-note" id="presetNote"><span class="rec">Recommended</span> Main product image · <b>1000×1000</b> · white background</p>
+        <p class="preset-note" id="presetNote"><span class="rec">Recommended</span> Upload standard · <b>1200×1200</b> · WooCommerce scales to 800px (product page) and 600px (catalog) · target under 200 KB</p>
       </div>
 
       <div class="field" id="advanced">
@@ -303,11 +303,16 @@
    ============================================================ */
 const PRESETS_JSON = {
   "presets": {
-    "product":    { "size":1000, "bg":"white",       "pad":8,  "quality":82, "label":"Main product image",      "recommended":true },
-    "product800": { "size":800,  "bg":"white",       "pad":8,  "quality":82, "label":"Product image (lighter)" },
-    "category":   { "size":600,  "bg":"card",        "pad":10, "quality":85, "label":"Category thumbnail" },
-    "shop":       { "size":500,  "bg":"card",        "pad":8,  "quality":85, "label":"Shop / catalog thumbnail" },
-    "logo":       { "size":500,  "bg":"transparent", "pad":14, "quality":90, "label":"Brand logo" }
+    "product":    { "size":1200, "bg":"white",       "pad":8,  "quality":82, "label":"Product — upload size",           "recommended":true,
+                    "note":"WooCommerce scales this to 800px (product page) and 600px (catalog). Target under 200 KB." },
+    "product800": { "size":800,  "bg":"white",       "pad":8,  "quality":82, "label":"Product — single page display",
+                    "note":"Lighter batch when zoom is not needed. WooCommerce single product page width." },
+    "category":   { "size":600,  "bg":"card",        "pad":10, "quality":85, "label":"Category thumbnail",
+                    "note":"WooCommerce catalog grid. Target under 100 KB." },
+    "shop":       { "size":400,  "bg":"card",        "pad":8,  "quality":80, "label":"Shop grid thumbnail",
+                    "note":"Cart widgets and small grid thumbnails. Target under 40 KB." },
+    "logo":       { "size":500,  "bg":"transparent", "pad":14, "quality":90, "label":"Brand logo (transparent)",
+                    "note":"Preserves transparency. WebP replaces PNG — same quality, 40% smaller." }
   },
   "bg_colors": { "white":"#FFFFFF", "card":"#FBF8F3" }
 };
@@ -316,7 +321,7 @@ const PRESETS_JSON = {
    STATE
    ============================================================ */
 const state = {
-  size: 1000,
+  size: 1200,
   bg: "white",
   padding: 8,
   quality: 82,
@@ -331,11 +336,11 @@ const $ = s => document.querySelector(s);
    PRESET UI WIRING
    ============================================================ */
 const PRESET_NOTES = {
-  product:    `<span class='rec'>Recommended</span> Main product image · <b>1000×1000</b> · white background`,
-  product800: `Product image (lighter) · <b>800×800</b> · white background`,
-  category:   `Category thumbnail · <b>600×600</b> · warm card background`,
-  shop:       `Shop/catalog thumbnail · <b>500×500</b> · warm card background`,
-  logo:       `Brand logo · <b>500×500</b> · transparent background`,
+  product:    `<span class='rec'>Recommended</span> Upload standard · <b>1200×1200</b> · WooCommerce scales to 800px (product page) and 600px (catalog) · target under 200 KB`,
+  product800: `Single product page · <b>800×800</b> · lighter batch when zoom not needed`,
+  category:   `Category thumbnail · <b>600×600</b> · catalog grid · target under 100 KB`,
+  shop:       `Shop grid thumbnail · <b>400×400</b> · cart widgets and small grid · target under 40 KB`,
+  logo:       `Brand logo · <b>500×500</b> · transparent background · WebP replaces PNG, 40% smaller`,
   custom:     `Custom — set your own size, background and padding below.`
 };
 
