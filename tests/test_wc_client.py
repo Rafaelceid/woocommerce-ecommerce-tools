@@ -6,10 +6,7 @@ from __future__ import annotations
 
 import base64
 import json
-import os
-import tempfile
 import time
-import unittest
 import unittest.mock as mock
 import urllib.error
 import urllib.request

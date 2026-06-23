@@ -34,7 +34,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
-from typing import Any, Generator, Iterator
+from typing import Any, Generator
 
 logger = logging.getLogger(__name__)
 
